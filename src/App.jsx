@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
 import Homepage from "./pages/Homepage";
 import CoinPage from "./pages/CoinPage";
+import Footer from "./components/Footer";
 
 const AppContainer = styled("div")({
   backgroundColor: "#14161a",
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Homepage />} exact />
          <Route path="/coins/:id" element={<CoinPage />} exact />
        </Routes>
+       <Footer />
       </AppContainer>
     </BrowserRouter>
 
