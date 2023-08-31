@@ -141,8 +141,8 @@ const CoinPage = () => {
                     }}>
                         {symbol}{" "}
                         {numberWithCommas(
-                        coin?.market_data.current_price[currency.toLowerCase()]
-                        .toString()
+                         coin?.market_data.current_price[currency.toLowerCase()].toFixed(2)
+                        .toString() 
                         )}
                     </Typography>
                 </span>
